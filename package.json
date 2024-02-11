@@ -4,8 +4,12 @@
   "private": true,
   "dependencies": {
     "@chec/commerce.js": "^2.8.0",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.7",
     "@mui/material": "^5.15.7",
+    "@mui/styles": "^5.15.7",
+    "@mui/system": "^5.15.7",
     "@stripe/react-stripe-js": "^2.4.0",
     "@stripe/stripe-js": "^2.4.0",
     "@testing-library/jest-dom": "^5.17.0",
