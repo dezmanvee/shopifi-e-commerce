@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { ThemeProvider, createTheme } from "@mui/material";
-import { Products, Navbar, Cart } from "./components";
+import { Products, Navbar, Cart , Checkout} from "./components";
 import { commerce } from "./lib/commerce";
 // import { set } from "react-hook-form";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -62,7 +62,7 @@ const App = () => {
     fetchCart();
   }, []);
 
-  console.log(cart);
+ 
   return (
     <ThemeProvider theme={theme}>
       <Router>
@@ -87,6 +87,7 @@ const App = () => {
                 />
               }
             />
+            <Route path="/checkout" element={<Checkout />}/>
           </Routes>
         </div>
       </Router>
